@@ -4,4 +4,6 @@ vim.o.termguicolors = true
 
 vim.cmd('hi linenr guifg=#ffbc04 guibg=black')
 
+require("impatient")
+
 require "wb.plugins"

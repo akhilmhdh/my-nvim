@@ -1,11 +1,11 @@
 local keymap = vim.keymap.set
 
- -- Open horizontal terminal
+-- Open horizontal terminal
 keymap("n", "<leader>th", ":below 18 sp<CR>:term<CR>i", { silent = true })
 keymap("t", "<leader>tc", "exit<CR>", { silent = true })
+keymap('t', '<C-c>', [[<C-\><C-n>]], { silent = true })
 
--- keymap("t","<Esc>","<C-"\"><C-N>",{silent = true, remap=true})
-keymap("n","<leader>s",":w<CR>")
+keymap("n", "<leader>s", ":w<CR>")
 
 -- Move selected lines in visual mode up or down, awesome!
 keymap("v", "J", ":m '>+1<CR>gv=gv")
@@ -21,4 +21,4 @@ keymap("v", "cp", "\"+y")
 keymap("n", "cp", "\"+Y")
 
 -- exit from insert mode
-keymap("i","<C-c>","<Esc>")
+keymap("i", "<C-c>", "<Esc>")

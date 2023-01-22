@@ -33,3 +33,8 @@ vim.opt.grepformat = "%f:%l:%c:%m,%f:%l:%m"
 vim.opt.laststatus = 3
 vim.o.completeopt = "menu,menuone,noselect"
 vim.o.title = true
+
+-- change color
+vim.cmd('hi linenr guifg=#ffbc04 guibg=black')
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting()]]
