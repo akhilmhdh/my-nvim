@@ -36,5 +36,5 @@ vim.o.title = true
 
 -- change color
 vim.cmd('hi linenr guifg=#ffbc04 guibg=black')
-
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting()]]
+-- COQ
+vim.cmd("COQnow")
