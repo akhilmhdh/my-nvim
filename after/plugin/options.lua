@@ -35,6 +35,6 @@ vim.o.completeopt = "menu,menuone,noselect"
 vim.o.title = true
 
 -- change color
-vim.cmd('hi linenr guifg=#ffbc04 guibg=black')
+vim.cmd('hi linenr guifg=#7aa2f7 guibg=black')
 -- COQ
 vim.cmd("COQnow")

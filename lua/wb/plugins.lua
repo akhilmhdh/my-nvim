@@ -29,6 +29,8 @@ local function spec(use)
 		"NvChad/nvim-colorizer.lua",
 	}
 
+	use 'folke/tokyonight.nvim'
+
 	use {
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
@@ -36,6 +38,7 @@ local function spec(use)
 			"nvim-lua/plenary.nvim",
 			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
 			"MunifTanjim/nui.nvim",
+			"s1n7ax/nvim-window-picker"
 		}
 	}
 
@@ -64,6 +67,30 @@ local function spec(use)
 
 	-- rust
 	use 'simrat39/rust-tools.nvim'
+
+	use 'ErichDonGubler/lsp_lines.nvim'
+	use 'WhoIsSethDaniel/mason-tool-installer.nvim'
+
+	use {
+		"jose-elias-alvarez/null-ls.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim"
+		}
+	}
+	-- lsp indexing progress monitor
+	use "j-hui/fidget.nvim"
+
+	use { 'ibhagwan/fzf-lua',
+		-- optional for icon support
+		requires = { 'nvim-tree/nvim-web-devicons' }
+	}
+	use { 'junegunn/fzf', run = './install --bin', }
+
+	use { "akinsho/toggleterm.nvim", tag = '*' }
+
+	use "numToStr/Comment.nvim"
+
+	use "windwp/nvim-autopairs"
 end
 
 require("packer").startup {
