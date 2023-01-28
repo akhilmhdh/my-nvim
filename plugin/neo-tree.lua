@@ -6,6 +6,15 @@ if not ok then
 end
 
 neotree.setup {
+	event_handlers = {
+		{
+			event = "neo_tree_buffer_enter",
+			handler = function()
+				vim.cmd [[setlocal relativenumber]]
+				vim.cmd [[ hi linenr guifg=#7aa2f7 guibg=#121212 ]]
+			end,
+		}
+	},
 	close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
 	popup_border_style = "rounded",
 	use_popups_for_input = false,
@@ -44,24 +53,24 @@ neotree.setup {
 		git_status = {
 			symbols = {
 				-- Change type
-				added = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
-				modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
-				deleted = "✖", -- this can only be used in the git_status source
-				renamed = "", -- this can only be used in the git_status source
+				added = "",
+				modified = "",
+				deleted = "✖",
+				renamed = "",
 				-- Status type
 				untracked = "?",
 				ignored = "",
 				unstaged = "M",
-				staged = "",
+				staged = "+",
 				conflict = "",
 			},
 		},
 	},
 	window = {
-		position = "left",
+		position = "right",
 		width = 40,
 		mappings = {
-			["<CR>"] = "open",
+			["<CR>"] = "open_with_window_picker",
 			["o"] = "open_with_window_picker",
 			["<C-v>"] = "vsplit_with_window_picker",
 			["<C-x>"] = "split_with_window_picker",
@@ -84,6 +93,7 @@ neotree.setup {
 			["q"] = "close_window",
 			["]c"] = "next_git_modified",
 			["[c"] = "prev_git_modified",
+			["z"] = "close_all_nodes",
 			-- reset default mappings
 			["space"] = "",
 			["<2-LeftMouse>"] = "",
@@ -151,5 +161,5 @@ inputs.input = function(message, default_value, callback, options, completion)
 end
 
 vim.keymap.set("n", "<leader>b", "<cmd>Neotree toggle show buffers right<cr>")
-vim.keymap.set("n", "<leader>a", "<cmd>Neotree reveal left<cr>")
+vim.keymap.set("n", "<leader>a", "<cmd>Neotree reveal right<cr>")
 vim.keymap.set("n", "<C-n>", "<cmd>Neotree toggle left<cr>")

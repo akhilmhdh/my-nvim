@@ -45,10 +45,10 @@ keymap("i", "<C-l>", "<Right>")
 keymap("n", "<M-q>", ":q<CR>")
 
 -- duplicate selected lines or line
-keymap("n", "dp", ":t.<CR>", { silent = true })
-keymap("n", "dP", ":t-1<CR>", { silent = true })
-keymap("v", "dp", ":'<,'>t'><CR>", { silent = true })
-keymap("v", "dP", ":'<,'>t'<<CR>", { silent = true })
+keymap("n", "<leader>dp", ":t.<CR>", { silent = true })
+keymap("n", "<leader>dP", ":t-1<CR>", { silent = true })
+keymap("v", "<leader>dp", ":'<,'>t'><CR>", { silent = true })
+keymap("v", "<leader>dP", ":'<,'>t'<<CR>", { silent = true })
 
 -- keymap("n", "J", "5j")
 -- keymap("n", "K", "5k")

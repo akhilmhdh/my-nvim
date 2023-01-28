@@ -17,12 +17,13 @@ picker.setup {
 		},
 	},
 
-	fg_color = colors.fg,
+	fg_color = "#f2f2f2",
+	bg_color = "#121212",
 
 	-- if you have include_current_win == true, then current_win_hl_color will
 	-- be highlighted using this background color
 	current_win_hl_color = colors.blue0,
 
 	-- all the windows except the curren window will be highlighted using this color
-	other_win_hl_color = colors.green1,
+	other_win_hl_color = "#121212",
 }
