@@ -33,7 +33,9 @@ vim.opt.grepformat = "%f:%l:%c:%m,%f:%l:%m"
 vim.opt.laststatus = 3
 vim.o.completeopt = "menu,menuone,noselect"
 vim.o.title = true
-
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.smarttab = true
 -- change color
 vim.cmd('hi linenr guifg=#7aa2f7 guibg=black')
 -- COQ

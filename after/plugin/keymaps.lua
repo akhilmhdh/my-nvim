@@ -38,11 +38,11 @@ keymap("n", "<Up>", ":resize -1<CR>", { noremap = true, silent = true })
 keymap("n", "<Down>", ":resize +1<CR>", { noremap = true, silent = true })
 
 -- navigation in insert mode
-keymap("i", "<C-h>", "<Left>")
-keymap("i", "<C-j>", "<Down>")
-keymap("i", "<C-k>", "<Up>")
-keymap("i", "<C-l>", "<Right>")
-keymap("n", "<M-q>", ":q<CR>")
+-- keymap("i", "<C-h>", "<Left>")
+-- keymap("i", "<C-j>", "<Down>")
+-- keymap("i", "<C-k>", "<Up>")
+-- keymap("i", "<C-l>", "<Right>")
+-- keymap("n", "<M-q>", ":q<CR>")
 
 -- duplicate selected lines or line
 keymap("n", "<leader>dp", ":t.<CR>", { silent = true })
@@ -56,6 +56,6 @@ keymap("v", "<leader>dP", ":'<,'>t'<<CR>", { silent = true })
 keymap("n", "<leader><tab>", ":tabnew<CR>", { noremap = true, silent = true })
 keymap("n", "<tab>", ":tabnext<CR>", { noremap = true, silent = true })
 keymap("n", "<S-tab>", ":tabprevious<CR>", { noremap = true, silent = true })
-keymap("n", "<C-w>", ":tabclose<CR>", { noremap = true, silent = true })
+-- keymap("n", "<C-w>", ":tabclose<CR>", { noremap = true, silent = true })
 
 keymap("n", "<leader>q", ":q<CR>", { silent = true })

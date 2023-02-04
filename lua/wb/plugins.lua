@@ -32,6 +32,11 @@ local function spec(use)
 	use 'folke/tokyonight.nvim'
 
 	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	}
+
+	use {
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
 		requires = {
@@ -89,8 +94,10 @@ local function spec(use)
 	use { "akinsho/toggleterm.nvim", tag = '*' }
 
 	use "numToStr/Comment.nvim"
-
 	use "windwp/nvim-autopairs"
+
+	use "windwp/nvim-ts-autotag"
+
 end
 
 require("packer").startup {

@@ -64,7 +64,6 @@ treesitter.setup {
 	},
 	autotag = {
 		enable = true,
-		filetypes = { "html", "javascript", "javascriptreact", "typescriptreact", "svelte", "vue" },
 	},
 	rainbow = { enable = true },
 	context_commentstring = {

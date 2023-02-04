@@ -71,7 +71,7 @@ neotree.setup {
 		width = 40,
 		mappings = {
 			["<CR>"] = "open_with_window_picker",
-			["o"] = "open_with_window_picker",
+			["o"] = "open",
 			["<C-v>"] = "vsplit_with_window_picker",
 			["<C-x>"] = "split_with_window_picker",
 			["t"] = "open_tabnew",
