@@ -3,7 +3,7 @@ local keymap = vim.keymap.set
 -- Open horizontal terminal
 -- keymap("n", "<leader>th", ":below 18 sp<CR>:term<CR>i", { silent = true })
 -- keymap("t", "<leader>tc", "exit<CR>", { silent = true })
-keymap('t', '<Esc>', [[<C-\><C-n>]], { silent = true })
+keymap('t', '<c-d>', [[<C-\><C-n>]], { silent = true })
 
 keymap("n", "<leader>s", ":w<CR>")
 
@@ -29,8 +29,8 @@ keymap("n", "<C-k>", "<C-w>k")
 keymap("n", "<C-l>", "<C-w>l")
 
 -- split
-keymap("n", "<leader>vs", ":vsplit<CR>")
-keymap("n", "<leader>hs", ":split<CR>")
+keymap("n", "<leader>|", ":vsplit<CR>")
+keymap("n", "<leader>-", ":split<CR>")
 
 keymap("n", "<Left>", ":vertical resize +1<CR>", { noremap = true, silent = true })
 keymap("n", "<Right>", ":vertical resize -1<CR>", { noremap = true, silent = true })
@@ -54,8 +54,8 @@ keymap("v", "<leader>dP", ":'<,'>t'<<CR>", { silent = true })
 -- keymap("n", "K", "5k")
 
 keymap("n", "<leader><tab>", ":tabnew<CR>", { noremap = true, silent = true })
-keymap("n", "<tab>", ":tabnext<CR>", { noremap = true, silent = true })
-keymap("n", "<S-tab>", ":tabprevious<CR>", { noremap = true, silent = true })
--- keymap("n", "<C-w>", ":tabclose<CR>", { noremap = true, silent = true })
+keymap("n", "<s-l>", ":tabnext<CR>", { noremap = true, silent = true })
+keymap("n", "<s-h>", ":tabprevious<CR>", { noremap = true, silent = true })
+keymap("n", "<tab>q", ":tabclose<CR>", { noremap = true, silent = true })
 
 keymap("n", "<leader>q", ":q<CR>", { silent = true })

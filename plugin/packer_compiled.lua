@@ -94,10 +94,10 @@ _G.packer_plugins = {
     path = "/Users/akhilmhdh/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
-  ["fidget.nvim"] = {
+  ["fine-cmdline.nvim"] = {
     loaded = true,
-    path = "/Users/akhilmhdh/.local/share/nvim/site/pack/packer/start/fidget.nvim",
-    url = "https://github.com/j-hui/fidget.nvim"
+    path = "/Users/akhilmhdh/.local/share/nvim/site/pack/packer/start/fine-cmdline.nvim",
+    url = "https://github.com/VonHeikemen/fine-cmdline.nvim"
   },
   fzf = {
     loaded = true,
@@ -153,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/akhilmhdh/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/Users/akhilmhdh/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["neo-tree.nvim"] = {
     loaded = true,
@@ -243,6 +248,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/akhilmhdh/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/Users/akhilmhdh/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/Users/akhilmhdh/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 

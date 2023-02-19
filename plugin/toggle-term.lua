@@ -12,7 +12,7 @@ toggleterm.setup {
 	start_in_insert = true,
 	persist_mode = true,
 	open_mapping = [[<leader>t]],
-	direction = 'horizontal',
+	direction = 'float',
 	highlights = {
 		CursorLineSign = { link = "DarkenedPanel" },
 		Normal = { guibg = "#121212" },

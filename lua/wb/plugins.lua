@@ -82,8 +82,6 @@ local function spec(use)
 			"nvim-lua/plenary.nvim"
 		}
 	}
-	-- lsp indexing progress monitor
-	use "j-hui/fidget.nvim"
 
 	use { 'ibhagwan/fzf-lua',
 		-- optional for icon support
@@ -95,9 +93,11 @@ local function spec(use)
 
 	use "numToStr/Comment.nvim"
 	use "windwp/nvim-autopairs"
-
 	use "windwp/nvim-ts-autotag"
 
+	use "folke/which-key.nvim"
+
+	use "RRethy/vim-illuminate"
 end
 
 require("packer").startup {
