@@ -61,7 +61,7 @@ return {
 			})
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "rust_analyzer", "tailwindcss", "terraformls", "gopls", "html", "pyright", "ruff_lsp", "tsserver", "denols" },
+				ensure_installed = { "lua_ls", "rust_analyzer", "tailwindcss", "terraformls", "gopls", "html", "pyright", "ruff", "ts_ls", "ruby_lsp", "eslint" },
 				handlers = {
 					function(server_name)
 						local cmp_lsp = require('cmp_nvim_lsp');
@@ -73,17 +73,10 @@ return {
 							capabilites = capabilites
 						}
 					end,
-					['tsserver'] = function()
+					['ts_ls'] = function()
 						local lspconfig = require("lspconfig")
-						lspconfig.tsserver.setup {
+						lspconfig.ts_ls.setup {
 							root_dir = lspconfig.util.root_pattern("package.json"),
-							single_file_support = false
-						}
-					end,
-					['denols'] = function()
-						local lspconfig = require("lspconfig")
-						lspconfig.denols.setup {
-							root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
 							single_file_support = false
 						}
 					end,
