@@ -16,6 +16,7 @@ return {
 				json = { "prettierd" },
 				yaml = { "prettierd" },
 				markdown = { "prettierd" },
+				mdx = { "prettierd" },
 				graphql = { "prettierd" },
 				liquid = { "prettierd" },
 				lua = { "stylua" },
